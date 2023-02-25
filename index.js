@@ -9,24 +9,11 @@ const dotenv = require('dotenv')
 const cloudinary = require ("cloudinary").v2;
 dotenv.config()
 
-if(typeof(process.env.CLOUDINARY_URL)==undefined){
-    console.warn('cloudinery usl is undefined')
-}
-else{
-    cloudinary.config({ 
-        cloud_name: 'df2rf5byk', 
-        api_key: '385611574179785', 
-        api_secret: '6Edh0hQsLtQUE95Wx7P4j_jedOA'
-       
-      });
-      
-
-}
 
 const mongoose = require('mongoose');
 mongoose.set('strictQuery', false);
 
-mongoose.connect(process.env.DATABASE_URL,{ useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
+mongoose.connect("mongodb+srv://Purushothama_G:puru555papu@cluster0.xaulxac.mongodb.net/recipe?retryWrites=true&w=majority",{ useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
     if(err) console.log(err.message)
     else{
     console.log('Successfully Connected to DB')
