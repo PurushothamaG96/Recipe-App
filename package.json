@@ -1,0 +1,29 @@
+{
+  "name": "recipe-app",
+  "version": "1.0.0",
+  "description": "cooking guide app",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PurushothamaG96/Recipe-App.git"
+  },
+  "author": "Purushothama G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PurushothamaG96/Recipe-App/issues"
+  },
+  "homepage": "https://github.com/PurushothamaG96/Recipe-App#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cloudinary": "^1.34.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.10.0",
+    "nodemon": "^2.0.20"
+  }
+}
